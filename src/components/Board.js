@@ -1,9 +1,10 @@
-import Row from './Row'
+import Box from './Box'
+
 const Board = ({values, handleClick}) => {
-    const rows = values.map( (val, i) => <Row key={i} handleClick={handleClick} values={val} /> )
+    const Grid = values.map( (value, i) => <Box value={value} key={i} arrNum={i} handleClick={handleClick} />)
     return (
-        <div>
-            { rows }
+        <div className="board">
+            { Grid }
         </div>
     )
 }

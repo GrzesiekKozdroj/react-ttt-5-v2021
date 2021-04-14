@@ -1,7 +1,7 @@
-const Box = ({val, handleClick}) => {
+const Box = ({value, handleClick, arrNum}) => {
     return (
-        <div onClick={handleClick} >
-            { val }
+        <div onClick={()=>handleClick(value,arrNum)} className="square" >
+            { value }
         </div>
     )
 }
