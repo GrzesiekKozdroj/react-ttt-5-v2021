@@ -1,0 +1,4 @@
+in json in react i made "homepage":"./"
+then I run yarn build, copied build folder to backend folder, 
+in backend folder in json file i added script so that i can
+START SERVER by typing NODE INDEX
